@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+const dateFormat = require('../utils/dateFormat');
 // need to require thought here
 
 // User model
@@ -14,6 +15,10 @@ const UserSchema = new Schema({
         required: 'Email is required', // custom error message
         unique: true, // each email needs to be unique
         match: [/.+\@.+\..+/]
+    },
+    createdAt: {
+        type: Date,
+        get: createdAtVal => dateFormat(createdAtVal) // formatting date and time
     },
     thoughts: [{
         type: Schema.Types.ObjectId,

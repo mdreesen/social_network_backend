@@ -7,7 +7,7 @@ router.use('/api', apiRoutes)
 
 // error handling for routes not found
 router.use((req, res) => {
-    res.status(404)
+    res.status(404).send('Yikes, try again')
 });
 
 module.exports = router;
