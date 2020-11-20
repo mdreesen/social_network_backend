@@ -1,9 +1,9 @@
 const router = require('express').Router();
 
 // Placeholder for adding the routes here
-// const {nameRoutes} = require('./{fileName}');
+const userRoutes = require('./user-routes');
 
 // Placeholder for using routes
-//router.use('/{endPointName}', {nameRoutes})
+router.use('/user', userRoutes);
 
 module.exports = router;

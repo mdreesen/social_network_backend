@@ -1,11 +1,13 @@
 const router = require('express').Router();
+const apiRoutes = require('./api')
 
 // Import all the routes
 // placeholder for importing all the routes
+router.use('/api', apiRoutes)
 
 // error handling for routes not found
 router.use((req, res) => {
-    res.status(404).json({ message: '404 error, could not find the route! ' })
+    res.status(404)
 });
 
 module.exports = router;

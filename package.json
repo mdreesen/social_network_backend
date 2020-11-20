@@ -20,6 +20,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "moment": "^2.29.1",
-    "mongoose": "^5.10.15"
+    "mongo": "^0.1.0",
+    "mongoose": "^5.10.15",
+    "node": "^15.2.1"
   }
 }
