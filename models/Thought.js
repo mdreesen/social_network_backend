@@ -1,4 +1,4 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model, Types } = require('mongoose');
 // may need to require user?
 const dateFormat = require('../utils/dateFormat'); // using moment to format the date
 
