@@ -16,16 +16,16 @@ npm start => This runs the backend app (if you are connected, a console.log will
 ## Route Testing
 This is with JSON
 * Get (GET) all users => http://localhost:3001/api/users - body takes nothing (none)
-* Get (GET) one unique user => http://localhost:3001/api/users/<userId> - body takes nothing (none)
+* Get (GET) one unique user => http://localhost:3001/api/users/{userId} - body takes nothing (none)
 * Create (POST) a user => http://localhost:3001/api/users - the body takes "username" and "email"
-* Update (PUT) a user => http://localhost:3001/api/user/<userId> - the body takes "username" and "email"
-* Delete (DELETE) a user => http://localhost:3001/api/user/<userId> - body takes nothing (none)
+* Update (PUT) a user => http://localhost:3001/api/user/{userId} - the body takes "username" and "email"
+* Delete (DELETE) a user => http://localhost:3001/api/user/{userId} - body takes nothing (none)
 * Get (GET) all thoughts => http://localhost:3001/api/thoughts - body takes nothing (none)
-* Get (GET) one unique thought => http://localhost:3001/api/thoughts/<thoughtId> - body takes nothing (none)
-* Create (POST) a thought => http://localhost:3001/api/thoughts/<userId> - body takes ?username" and "thoughtText"
-* Update (PUT) a thought => http://localhost:3001/api/thoughts/<userId>/<thoughtId> - body takes "username" and "thoughtText"
-* Delete (DELETE) a thought => http://localhost:3001/api/thoughts/<userId>/<thoughtId> - body takes nothing (none)
-* Add (POST) a friend => http://localhost:3001/api/users/<userId>/friends - body takes "userId"
-* Delete (DELETE) a friend => http://localhost:3001/api/users/<userId>/friends/<friendId> - body takes nothing (none)
-* Add (PUT) a reaction => http://localhost:3001/api/thoughts/<thoughtId>/reactions/ - body takes "reactionBody" and "username"
-* Delete (DELETE) a reaction => http://localhost:3001/api/thoughts/<thoughtId>/reactions/<reactionId>
+* Get (GET) one unique thought => http://localhost:3001/api/thoughts/{thoughtId} - body takes nothing (none)
+* Create (POST) a thought => http://localhost:3001/api/thoughts/{userId} - body takes ?username" and "thoughtText"
+* Update (PUT) a thought => http://localhost:3001/api/thoughts/{userId}/{thoughtId} - body takes "username" and "thoughtText"
+* Delete (DELETE) a thought => http://localhost:3001/api/thoughts/{userId}/{thoughtId} - body takes nothing (none)
+* Add (POST) a friend => http://localhost:3001/api/users/{userId}/friends - body takes "userId"
+* Delete (DELETE) a friend => http://localhost:3001/api/users/{userId}/friends/{friendId} - body takes nothing (none)
+* Add (PUT) a reaction => http://localhost:3001/api/thoughts/{thoughtId}/reactions/ - body takes "reactionBody" and "username"
+* Delete (DELETE) a reaction => http://localhost:3001/api/thoughts/{thoughtId}/reactions/{reactionId} - body takes nothing (none)
