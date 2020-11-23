@@ -29,3 +29,6 @@ This is with JSON
 * Delete (DELETE) a friend => http://localhost:3001/api/users/{userId}/friends/{friendId} - body takes nothing (none)
 * Add (PUT) a reaction => http://localhost:3001/api/thoughts/{thoughtId}/reactions/ - body takes "reactionBody" and "username"
 * Delete (DELETE) a reaction => http://localhost:3001/api/thoughts/{thoughtId}/reactions/{reactionId} - body takes nothing (none)
+
+## Walkthrough
+https://drive.google.com/file/d/1Unp4TxD4YFbyitJZLl3-aT6Ndrhi_x3u/preview
