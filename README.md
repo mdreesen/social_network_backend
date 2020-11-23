@@ -31,4 +31,4 @@ This is with JSON
 * Delete (DELETE) a reaction => http://localhost:3001/api/thoughts/{thoughtId}/reactions/{reactionId} - body takes nothing (none)
 
 ## Walkthrough
-https://drive.google.com/file/d/1Unp4TxD4YFbyitJZLl3-aT6Ndrhi_x3u/preview
+https://drive.google.com/file/d/1BSpR2uUyg2ozcEFSfSj6GeIwh0Z-6C19/view
