@@ -26,8 +26,7 @@ const UserSchema = new Schema({
     }],
     friends: [{
         type: Schema.Types.ObjectId,
-        ref: "User", // referencing users (self-reference)
-        unique: true
+        ref: "User" // referencing users (self-reference)
     }]
 }, {
     toJSON: {
